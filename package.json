@@ -1,0 +1,41 @@
+{
+  "name": "postcss-animation",
+  "version": "0.1.0",
+  "description": "PostCSS plugin that adds @keywords from animate.css.",
+  "keywords": [
+    "postcss",
+    "css",
+    "postcss-plugin",
+    "animation",
+    "keyframes"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zhouwenbin/postcss-animation.git"
+  },
+  "author": "zhouwenbin <zwb86@qq.com>",
+  "maintainers": [
+    {
+      "name": "zhouwenbin",
+      "email": "zwb86@qq.com",
+      "web": "http://zhouwenbin.com"
+    }
+  ],
+  "bugs": {
+    "url": "https://github.com/zhouwenbin/postcss-animation/issues"
+  },
+  "homepage": "https://github.com/zhouwenbin/postcss-animation",
+  "dependencies": {
+    "postcss": "^5.0"
+  },
+  "devDependencies": {
+    "gulp-eslint": "^0.12.0",
+    "gulp-mocha": "^2.0.1",
+    "chai": "^2.3.0",
+    "gulp": "^3.8.11"
+  },
+  "scripts": {
+    "test": "gulp check"
+  }
+}
