@@ -1,5 +1,3 @@
-"use strict";
-
 var postcss = require("postcss"),
     expect = require("chai").expect,
     fs = require("fs"),
