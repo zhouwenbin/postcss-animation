@@ -1,7 +1,7 @@
 # PostCSS animation
 [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url]
 
-[PostCSS][PostCSS] PostCSS plugin that adds @keywords from [animate.css](https://github.com/daneden/animate.css).
+[PostCSS][PostCSS] PostCSS plugin that adds `@keyframes` from [animate.css](https://github.com/daneden/animate.css).
 
 ```css
 .foo {
