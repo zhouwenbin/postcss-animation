@@ -1,6 +1,6 @@
 {
   "name": "postcss-animation",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "PostCSS plugin that adds @keywords from animate.css.",
   "keywords": [
     "postcss",
@@ -33,6 +33,7 @@
     "gulp-eslint": "^0.12.0",
     "gulp-mocha": "^2.0.1",
     "chai": "^2.3.0",
+    "postcss-animation-data": "^0.0.3",
     "gulp": "^3.8.11"
   },
   "scripts": {

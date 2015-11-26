@@ -4,10 +4,8 @@ var postcss = require("postcss"),
     expect = require("chai").expect,
     fs = require("fs"),
     path = require("path"),
-    plugin = require("../");
-
-var keyframes = JSON.parse(require("fs").readFileSync("data.json","utf-8"));
-
+    plugin = require("../"),
+    keyframes = require("postcss-animation-data");
 
 var test = function (fixture, opts, done) {
   var input = fixture + ".css",
