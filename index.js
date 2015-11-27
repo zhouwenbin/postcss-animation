@@ -10,11 +10,23 @@ module.exports = postcss.plugin("postcss-animation", function () {
 
     css.walkDecls("animation-name", function(decl) {
     	var thisRule = decl.parent; 
-		if (!keyframes[decl.value]){
-			return;
-		}
+  		if (!keyframes[decl.value]){
+  			return;
+  		}
 
     	thisRule.parent.insertAfter(thisRule, keyframes[decl.value]);
+    });
+
+    css.walkDecls("animation", function(decl) {
+      var thisRule = decl.parent; 
+      var values = postcss.list.space(decl.value);
+      values.forEach(function (value) {
+        if (!keyframes[value]){
+          return;
+        }else{
+          thisRule.parent.insertAfter(thisRule, keyframes[value]);
+        }
+      });
     });
 
   };
