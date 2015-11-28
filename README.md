@@ -48,6 +48,12 @@ See [PostCSS][PostCSS] docs for examples for your environment.
 
 MIT © [zhouwenbin](http://zhouwenbin.com)
 
+--
+
+### Thanks
+
+[animate.css](https://github.com/daneden/animate.css)
+
 [npm-image]: https://badge.fury.io/js/postcss-animation.svg
 [npm-url]: https://npmjs.org/package/postcss-animation
 [travis-image]: https://travis-ci.org/zhouwenbin/postcss-animation.svg?branch=master

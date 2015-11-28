@@ -10,9 +10,9 @@ module.exports = postcss.plugin("postcss-animation", function () {
 
     css.walkDecls("animation-name", function(decl) {
     	var thisRule = decl.parent; 
-  		if (!keyframes[decl.value]){
-  			return;
-  		}
+      if (!keyframes[decl.value]){
+        return;
+      }
 
     	thisRule.parent.insertAfter(thisRule, keyframes[decl.value]);
     });
