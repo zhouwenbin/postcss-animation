@@ -28,7 +28,7 @@
   "homepage": "https://github.com/zhouwenbin/postcss-animation",
   "dependencies": {
     "postcss": "^5.0",
-    "postcss-animation-data": "^0.0.3"
+    "postcss-animation-data": "^0.0.4"
   },
   "devDependencies": {
     "chai": "^3.2.0",
