@@ -8,8 +8,9 @@ var postcss = require("postcss"),
     keyframes = require("postcss-animation-data");
 
 var test = function (fixture, opts, done) {
-  var input = fixture + ".css",
+var input = fixture + ".css",
       expected = fixture + ".expected.css";
+var opts = {atRoot: true};
 
   input = fs.readFileSync(path.join(__dirname, "fixtures", input), "utf8");
   expected = fs.readFileSync(path.join(__dirname, "fixtures", expected), "utf8");

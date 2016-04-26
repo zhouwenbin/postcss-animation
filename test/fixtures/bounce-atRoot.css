@@ -1,0 +1,5 @@
+@media only screen and (min-width: 600px) {
+  .foo {
+    animation-name: bounce;
+  }
+}
