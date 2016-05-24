@@ -42,6 +42,10 @@ postcss([ require('postcss-animation') ])
 
 See [PostCSS][PostCSS] docs for examples for your environment.
 
+### gulp
+
+see this [example](https://github.com/zhouwenbin/postcss-animation-example)
+
 ## Options
 
 Call plugin function to set options:
