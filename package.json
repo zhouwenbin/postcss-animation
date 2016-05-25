@@ -1,6 +1,6 @@
 {
   "name": "postcss-animation",
-  "version": "0.0.10",
+  "version": "0.0.11",
   "description": "PostCSS plugin that adds `@keyframes` from animate.css.",
   "keywords": [
     "postcss",
