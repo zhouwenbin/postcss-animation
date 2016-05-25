@@ -28,7 +28,7 @@ module.exports = postcss.plugin("postcss-animation", function (options) {
           return;
         }else{
           options.atRoot ? css.append(keyframes[decl.value])
-                         : thisRule.parent.insertAfter(thisRule, keyframes[decl.value]);
+                         : thisRule.parent.insertAfter(thisRule, keyframes[value]);
         }
       });
     });
