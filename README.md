@@ -46,53 +46,6 @@ See [PostCSS][PostCSS] docs for examples for your environment.
 
 see this [example](https://github.com/zhouwenbin/postcss-animation-example)
 
-## Options
-
-Call plugin function to set options:
-
-```js
-postcss([ require('postcss-animation({atRoot: true})') ])
-```
-
-### `atRoot`
-
-Defines `atRoot: true` to prevent the `@keyframes` can be nested in a ​**media queries**
-
-#### Input
-```css
-@media only screen and (min-width: 600px) {
-  .foo {
-    animation-name: bounce;
-  }
-}
-```
-
-#### Output
-```css
-@media only screen and (min-width: 600px) {
-  .foo {
-    animation-name: bounce;
-  }
-}
-@keyframes bounce {
-  from, 20%, 53%, 80%, to {
-    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
-    transform: translate3d(0,0,0);
-  }
-  40%, 43% {
-    animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
-    transform: translate3d(0, -30px, 0);
-  }
-  70% {
-    animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
-    transform: translate3d(0, -15px, 0);
-  }
-  90% {
-    transform: translate3d(0,-4px,0);
-  }
-}
-```
-
 --
 
 ### License
