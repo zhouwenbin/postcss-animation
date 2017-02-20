@@ -17,6 +17,9 @@ module.exports = postcss.plugin("postcss-animation", function () {
   }
 
   return function (css) {
+
+    hasKeyframes = [];
+
     css.walkDecls("animation-name", function(decl) {
       var thisRule = decl.parent;
       var value = decl.value;
